@@ -1,0 +1,739 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"/>
+
+    <link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!--Styles-->
+    <style>
+      .swiper-pagination-bullet {
+        background-color: #ccc;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #2c7c62 !important; 
+      }
+      
+      .link-green {
+        color: #2c7c62;
+        border-bottom: 2px solid #2c7c62;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .link-green:hover {
+        color: #215c4a;
+      }
+    </style>
+    <title>Ayuda Ecuador - Encuentra un freelancer de TI ahora</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <!--Menu-->
+        <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b border-[#e7edf4] bg-white px-4 sm:px-10 py-3 shadow-sm">
+          <!-- Логотип -->
+          <div class="flex items-center gap-3 text-[#0d141c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Ayuda Ecuador</h2>
+          </div>
+
+          <!-- Бургер (мобилка) -->
+          <button id="menu-toggle" class="sm:hidden text-[#0d141c] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+
+          <!-- Меню -->
+          <nav id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-t border-[#e7edf4] sm:static sm:flex sm:items-center sm:gap-9 sm:border-none sm:bg-transparent sm:w-auto">
+            <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#about">Nosotros</a>
+            <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#especialistas">Especialistas</a>
+            <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#contacto">Contacto</a>
+            <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#geografia">Geografía</a>
+          </nav>
+        </header>
+
+        <div class="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 flex justify-center py-5">
+          <div class="layout-content-container flex flex-col w-full max-w-[820px]">
+
+            <!-- Head image -->
+            <div class="@container pt-6 sm:pt-10">
+              <div class="@sm:px-4 @sm:py-3">
+                <div class="w-full overflow-hidden rounded-none @sm:rounded-xl min-h-[100px] sm:min-h-[218px]">
+                  <picture>
+                    <source media="(max-width: 639px)" srcset="images/head-mobile.png">
+                    <img 
+                      src="images/head.png" 
+                      alt="Header" 
+                      class="w-full h-full object-cover bg-slate-50 bg-center bg-no-repeat"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <!--About us-->
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <h1 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="about">Sobre Nosotros</h1>
+            </div>
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Somos una comunidad de freelancers en el ámbito de TI, de áreas completamente distintas y con experiencias muy diversas. Creamos un 
+              espacio donde cualquier persona interesada, cualquier cliente, puede venir y encontrar fácilmente a un profesional con una visión del 
+              mundo, ideas y enfoques similares, y juntos llevar a cabo cualquier tarea. Nuestro sitio existe precisamente para eso: conectar al 
+              profesional con el cliente. Justo como en una cita.
+            </p>
+
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <h1 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="especialistas">Freelance Equipo</h1>
+            </div>
+
+            <!--Filter buttons-->
+            <div class="flex flex-wrap justify-center gap-3 py-4">
+              <button onclick="filterFreelancers('all')" class="filter-btn bg-[#2c7c62] text-white px-4 py-1 rounded-full">Todos</button>
+              <button onclick="filterFreelancers('websites')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Web</button>
+              <button onclick="filterFreelancers('design')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Diseño</button>
+            </div>
+
+            <div id="freelancer-list" class="flex flex-col gap-4 sm:gap-4">
+
+              <!-- 1st position -->
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+                
+                <div class="flex justify-center sm:justify-start">
+                  <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="images/efim-polianskii.jpg" 
+                      alt="efim polisnakii - traductor" 
+                      class="rounded-xl w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col justify-center text-left sm:flex-1">
+                  <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
+                    Efim Polianskii
+                  </h2>
+                  <p class="text-[#49719c] text-sm font-normal leading-normal">
+                    🎨 Desarrollador Frontend con más de 4 años de experiencia creando interfaces modernas y responsivas. Trabajo con React, Vue, Tailwind y otras tecnologías actuales. Me especializo en ofrecer soluciones rápidas, escalables y con buen rendimiento. Disponible para proyectos freelance, remotos o colaboraciones a corto y largo plazo.
+                  </p>
+                </div>
+
+                <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
+                  <div class="flex flex-row sm:flex-col gap-3">
+                    <!-- Кнопка LinkedIn -->
+                    <a href="https://www.linkedin.com/in/efimpolianskii/">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                          <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </button>
+                    </a>
+
+                    <!-- Кнопка GitHub -->
+                    <a href="https://example.com">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 0C5.371 0 0 5.373 0 12c0 4.991 3.053 9.243 7.422 11.004-.102-.937-.195-2.38.041-3.404.215-.95 1.387-6.043 1.387-6.043s-.353-.707-.353-1.752c0-1.64.951-2.866 2.136-2.866 1.005 0 1.49.754 1.49 1.657 0 1.009-.642 2.518-.974 3.924-.278 1.175.59 2.135 1.747 2.135 2.096 0 3.706-2.211 3.706-5.404 0-2.821-2.027-4.796-4.913-4.796-3.346 0-5.307 2.507-5.307 5.1 0 1.011.389 2.096.875 2.685a.354.354 0 0 1 .082.34c-.09.376-.295 1.175-.336 1.338-.053.214-.174.26-.403.157-1.504-.7-2.44-2.896-2.44-4.662 0-3.792 2.755-7.276 7.938-7.276 4.165 0 7.398 2.969 7.398 6.937 0 4.138-2.609 7.475-6.229 7.475-1.217 0-2.361-.631-2.751-1.379l-.749 2.853c-.271 1.031-1.007 2.324-1.501 3.109C10.359 23.857 11.17 24 12 24c6.629 0 12-5.373 12-12S18.629 0 12 0z"/>
+                        </svg>
+                        <span>GitHub</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
+              </div>
+
+
+              <!--2nd position-->
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="design">
+
+                <div class="flex justify-center sm:justify-start">
+                  <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="images/marina-panina.jpg" 
+                      alt="efim polisnakii - traductor" 
+                      class="rounded-xl w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col justify-center text-left sm:flex-1">
+                  <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
+                    Marina Panina
+                  </h2>
+                  <p class="text-[#49719c] text-sm font-normal leading-normal">
+                    🎨 Desarrollador Frontend con más de 4 años de experiencia creando interfaces modernas y responsivas. Trabajo con React, Vue, Tailwind y otras tecnologías actuales. Me especializo en ofrecer soluciones rápidas, escalables y con buen rendimiento. Disponible para proyectos freelance, remotos o colaboraciones a corto y largo plazo.
+                  </p>
+                </div>
+
+                <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
+                  <a href="https://www.linkedin.com/in/efimpolianskii/">
+                    <button
+                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                      </svg>
+                      <span>LinkedIn</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
+              </div>
+
+              <!--3rd position-->
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+
+                <div class="flex justify-center sm:justify-start">
+                  <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="images/efim-polianskii-1.jpg" 
+                      alt="efim polisnakii - traductor" 
+                      class="rounded-xl w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col justify-center text-left sm:flex-1">
+                  <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
+                    Marina Panina
+                  </h2>
+                  <p class="text-[#49719c] text-sm font-normal leading-normal">
+                    🐍 Desarrollador Python con más de 4 años de experiencia en backend, automatización y análisis de datos. Experto en Django, Flask y 
+                        creación de APIs eficientes. Me enfoco en código limpio, rendimiento y soluciones a medida 🚀. Siempre listo para nuevos retos y 
+                        proyectos innovadores.
+                  </p>
+                </div>
+
+                <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
+                  <a href="https://www.linkedin.com/in/efimpolianskii/">
+                    <button
+                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                      </svg>
+                      <span>LinkedIn</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
+              </div>
+
+              <!--4th position-->
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="design">
+
+                <div class="flex justify-center sm:justify-start">
+                  <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="images/efim-polianskii-2.jpg" 
+                      alt="efim polisnakii - traductor" 
+                      class="rounded-xl w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col justify-center text-left sm:flex-1">
+                  <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
+                    Marina Panina
+                  </h2>
+                  <p class="text-[#49719c] text-sm font-normal leading-normal">
+                    Creativo diseñador web con 6 años de experiencia en UX/UI y diseño responsivo. Manejo Figma, Sketch y Adobe Creative Suite. 
+                        Transformo ideas en experiencias digitales únicas que aumentan la interacción y retención de usuarios 💡. 
+                        Trabajo con pasión, atención al detalle y compromiso en cada proyecto. ¡Vamos a crear juntos! 🚀
+                  </p>
+                </div>
+
+                <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
+                  <a href="https://www.linkedin.com/in/efimpolianskii/">
+                    <button
+                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                      </svg>
+                      <span>LinkedIn</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
+              </div>
+
+              <!--5th position-->
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+
+                <div class="flex justify-center sm:justify-start">
+                  <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="images/efim-polianskii-3.jpg" 
+                      alt="efim polisnakii - traductor" 
+                      class="rounded-xl w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col justify-center text-left sm:flex-1">
+                  <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
+                    Marina Panina
+                  </h2>
+                  <p class="text-[#49719c] text-sm font-normal leading-normal">
+                    📊 Analista de datos con 5 años ayudando a empresas a tomar decisiones basadas en datos. Experto en Python, SQL, 
+                      Tableau y Power BI. Me especializo en limpieza, visualización y modelado de datos para maximizar resultados 📈. 
+                      Apasionado por descubrir insights que impulsan el crecimiento. Listo para nuevos desafíos. 🔍
+                  </p>
+                </div>
+
+                <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
+                  <a href="https://www.linkedin.com/in/efimpolianskii/">
+                    <button
+                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                      </svg>
+                      <span>LinkedIn</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
+              </div>
+
+              <!--6th position-->
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="design">
+
+                <div class="flex justify-center sm:justify-start">
+                  <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="images/bill-gates.jpg" 
+                      alt="efim polisnakii - traductor" 
+                      class="rounded-xl w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col justify-center text-left sm:flex-1">
+                  <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
+                    Marina Panina
+                  </h2>
+                  <p class="text-[#49719c] text-sm font-normal leading-normal">
+                    Soy Bill Gates, pionero en tecnología y filántropo apasionado. Con décadas de experiencia en software y liderazgo, 
+                          ofrezco soluciones innovadoras y estratégicas para proyectos tecnológicos complejos 🌍. Experto en desarrollo, 
+                          gestión y visión global. Listo para transformar tu idea en realidad con impacto mundial. 🚀
+                  </p>
+                </div>
+
+                <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
+                  <a href="https://www.linkedin.com/in/efimpolianskii/">
+                    <button
+                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                      </svg>
+                      <span>LinkedIn</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
+              </div>
+
+              <!--7th position-->
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+
+                <div class="flex justify-center sm:justify-start">
+                  <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="images/luis-von-ahn.jpg" 
+                      alt="efim polisnakii - traductor" 
+                      class="rounded-xl w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col justify-center text-left sm:flex-1">
+                  <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
+                    Luis von Ahn
+                  </h2>
+                  <p class="text-[#49719c] text-sm font-normal leading-normal">
+                    🌟 Soy Luis von Ahn, creador de Duolingo y pionero en aprendizaje de idiomas mediante tecnología. Con 
+                          amplia experiencia en desarrollo de software, gamificación y educación digital, diseño soluciones innovadoras 
+                          que transforman la forma de aprender 📚. Apasionado por la tecnología que conecta y educa. Listo para nuevos retos. 🚀
+                  </p>
+                </div>
+
+                <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
+                  <a href="https://www.linkedin.com/in/efimpolianskii/">
+                    <button
+                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                      </svg>
+                      <span>LinkedIn</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
+              </div>
+
+            </div>
+
+            <div id="pagination" class="flex justify-center gap-4 my-4"></div>
+
+            <!--contacto-->
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <h1 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="contacto">Contacto</h1>
+            </div>
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Siempre estamos actualizando nuestra base de datos de freelancers, seleccionando manualmente a los más experimentados y talentosos, 
+              basándonos en su trayectoria, experiencia laboral y habilidades de comunicación (sin ellas, nada funciona). Sin embargo, si tú 
+              también eres freelancer y quisieras unirte a nuestra comunidad, formar parte de nuestro gran equipo y recibir más oportunidades de 
+              trabajo, siempre puedes <a href="https://www.linkedin.com/in/efimpolianskii/" class="link-green">escribirnos</a>. 
+              Consideramos a todos los interesados.
+            </p>
+
+            <!--Cauresel-->
+            <div class="swiper w-full max-w-[788px]">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="flex items-center gap-4 p-4 rounded">
+                    <div class="w-[96px] h-[96px] shrink-0 flex items-center justify-center rounded-full bg-[#2c7c62] text-white text-5xl font-bold">1</div>
+                    <div>
+                      <h3 class="text-lg font-semibold">Escríbenos</h3>
+                      <p class="text-sm text-gray-600">
+                        Puedes <a href="https://www.linkedin.com/in/efimpolianskii/" class="link-green">escribirnos</a> usando el enlace. No tenemos límite en la cantidad de especialistas.
+                        Si hay un millón de solicitudes, las publicaremos todas por orden de llegada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="flex items-center gap-4 p-4 rounded">
+                  <div class="w-[96px] h-[96px] shrink-0 flex items-center justify-center rounded-full bg-[#2c7c62] text-white text-5xl font-bold">2</div>
+                    <div>
+                      <h3 class="text-lg font-semibold">Breve recopilación de información</h3>
+                      <p class="text-sm text-gray-600">
+                        Envíanos la información básica para tu ficha de freelancer.
+                        Nosotros te la pediremos directamente y no es nada complicado.
+                        Esta información es necesaria para que tu perfil se vea perfecto para los clientes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="flex items-center gap-4 p-4 rounded">
+                  <div class="w-[96px] h-[96px] shrink-0 flex items-center justify-center rounded-full bg-[#2c7c62] text-white text-5xl font-bold">3</div>
+                    <div>
+                      <h3 class="text-lg font-semibold">Publicación en el sitio web</h3>
+                      <p class="text-sm text-gray-600">
+                        Publicamos tu ficha en nuestro sitio web, y tu mini perfil se vuelve visible para muchos clientes potenciales.
+                        A partir de ahí, todo depende de ti.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!--geografia-->
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <h1 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="geografia">Geografía</h1>
+            </div>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Vivimos y trabajamos en todo el mundo y con todo el mundo, pero la mayoría de nosotros vive justamente aquí. 
+              Cada día trabajamos para ampliar nuestra geografía y nuestro equipo, para que algún día también veas tu ciudad aquí:
+            </p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
+                <div class="text-[#0e161b]" data-icon="MapPin" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#0e161b] text-base font-bold leading-tight">Quito</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
+                <div class="text-[#0e161b]" data-icon="MapPin" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#0e161b] text-base font-bold leading-tight">Cuenca</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
+                <div class="text-[#0e161b]" data-icon="MapPin" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#0e161b] text-base font-bold leading-tight">Guayaquil</h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col gap-6 px-5 py-10 text-center">
+            <div class="flex flex-wrap items-center justify-center gap-6">
+              <button onclick="openModal('contactModal')" class="text-[#49719c] text-base font-normal">Contacto</button>
+              <button onclick="openModal('privacyModal')" class="text-[#49719c] text-base font-normal">Política de Privacidad</button>
+              <button onclick="openModal('termsModal')" class="text-[#49719c] text-base font-normal">Términos de Servicio</button>
+            </div>
+            <p class="text-[#49719c] text-base font-normal">© <span id="currentYear"></span> Ayuda Ecuador. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <!--Contacto -->
+    <div id="contactModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50">
+      <div class="bg-white rounded-lg p-6 w-full max-w-md mx-4 relative">
+        <button onclick="closeModal('contactModal')" class="absolute top-3 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
+        <h2 class="text-xl font-semibold text-[#2c7c62] mb-4">Contacto</h2>
+        <p class="text-sm text-gray-700">Puedes escribirnos a <a href="https://www.linkedin.com/in/efimpolianskii/" class="link-green">linkedin</a></p>
+      </div>
+    </div>
+
+    <!--Política de Privacidad -->
+    <div id="privacyModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50">
+      <div class="bg-white rounded-lg p-6 w-full max-w-md mx-4 relative max-h-[80vh] overflow-y-auto">
+        <button onclick="closeModal('privacyModal')" class="absolute top-3 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
+        <h2 class="text-xl font-semibold text-[#2c7c62] mb-4">Política de Privacidad</h2>
+
+        <p class="text-sm text-gray-700">Respetamos tu privacidad. A continuación explicamos cómo recopilamos, usamos y protegemos tus datos en nuestro sitio web.</p></br>
+          <h3>1. Recopilación de datos</h3>
+
+          <p class="text-sm text-gray-700">Publicamos los datos de contacto de los freelancers con su consentimiento explícito. Esta información 
+          incluye: nombre, fotografía, descripción de servicios, enlaces a redes sociales y mensajería.</p></br>
+          <h3>2. Uso de la información</h3>
+
+          <p class="text-sm text-gray-700">La información publicada se utiliza exclusivamente con fines promocionales. No compartimos tus datos con terceros.</p></br>
+          <h3>3. Contacto</h3>
+
+          <p class="text-sm text-gray-700">Las solicitudes de los usuarios llegan directamente por correo electrónico, redes sociales o a través de 
+            la administración del sitio, que actúa como intermediario.</p></br>
+          <h3>4. Seguridad</h3>
+
+          <p class="text-sm text-gray-700">Adoptamos medidas razonables para proteger la información, aunque no nos responsabilizamos 
+          por el uso de terceros fuera de nuestro control.</p></br>
+          <h3>5. Tus derechos</h3>
+          <p class="text-sm text-gray-700">Puedes solicitar la eliminación de tus datos en cualquier momento escribiéndonos por correo. 
+            Eliminaremos la información en un plazo de 3 días hábiles.</p>
+      </div>
+    </div>
+
+    <!--Términos de Servicio -->
+    <div id="termsModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50">
+      <div class="bg-white rounded-lg p-6 w-full max-w-md mx-4 relative max-h-[80vh] overflow-y-auto">
+        <button onclick="closeModal('termsModal')" class="absolute top-3 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
+        <h2 class="text-xl font-semibold text-[#2c7c62] mb-4">Términos de Servicio</h2>
+        
+          <h3>1. Propósito del sitio</h3>
+          <p class="text-sm text-gray-700">Este sitio tiene como objetivo promocionar freelancers en áreas como IT, traducción, y otros servicios. No actuamos como empleadores ni como agencia.</p></br>
+          
+          <h3>2. Responsabilidad</h3>
+          <p class="text-sm text-gray-700">No somos responsables por la calidad del trabajo de los freelancers ni por los acuerdos realizados entre cliente y proveedor.</p></br>
+          
+          <h3>3. Moderación</h3>
+          <p class="text-sm text-gray-700">Nos reservamos el derecho de editar o eliminar información publicada sin previo aviso.</p></br>
+          
+          <h3>4. Solicitudes de los usuarios</h3>
+          <p class="text-sm text-gray-700">Al enviar una solicitud, aceptas que tus datos sean compartidos con el freelancer correspondiente.</p></br>
+          
+          <h3>5. Cambios</h3>
+          <p class="text-sm text-gray-700">Nos reservamos el derecho de modificar estos términos en cualquier momento. El uso continuo del 
+            sitio implica la aceptación de las condiciones vigentes.</p>
+
+      </div>
+    </div>
+  </div>
+
+    <!--Define current year-->
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+    </script>
+
+    <!--Cauresel script-->
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    </script>
+
+    <!--Auto pages number-->
+    <script>
+      function showPage(pageNumber) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach((page, index) => {
+          page.classList.add('hidden');
+          if (index === pageNumber - 1) {
+            page.classList.remove('hidden');
+          }
+        });
+      }
+    </script>
+
+    <!--Opening modal window-->
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add('flex');
+        document.body.style.overflow = 'hidden'; // отключает прокрутку фона
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).classList.remove('flex');
+        document.getElementById(id).classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    </script>
+
+    <!--Freelance filtering-->
+    <script>
+      const itemsPerPage = 5;
+      let currentPage = 1;
+      let activeCategory = 'all';
+      let skipScroll = true;
+
+      function getFilteredFreelancers() {
+        const allCards = Array.from(document.querySelectorAll('.freelancer'));
+        return allCards.filter(card => {
+          const cat = card.getAttribute('data-category');
+          return activeCategory === 'all' || cat === activeCategory;
+        });
+      }
+
+      function renderPage(page) {
+        const cards = getFilteredFreelancers();
+        const totalPages = Math.ceil(cards.length / itemsPerPage);
+        currentPage = Math.min(page, totalPages) || 1;
+
+        document.querySelectorAll('.freelancer').forEach(card => card.classList.add('hidden'));
+
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        cards.slice(start, end).forEach(card => card.classList.remove('hidden'));
+
+        renderPaginationButtons(totalPages);
+
+        if (!skipScroll) {
+          scrollToTopOfFreelancers();
+        }
+      }
+
+      function renderPaginationButtons(totalPages) {
+        const container = document.getElementById('pagination');
+        container.innerHTML = '';
+        for (let i = 1; i <= totalPages; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = i;
+          btn.className = `px-4 py-2 rounded-full ${i === currentPage ? 'bg-[#2c7c62] text-white' : 'bg-[#e7edf4] text-[#0d141c]'}`;
+          btn.addEventListener('click', () => {
+            skipScroll = false;
+            renderPage(i);
+          });
+          container.appendChild(btn);
+        }
+      }
+
+      function filterFreelancers(category) {
+        activeCategory = category;
+        currentPage = 1;
+        skipScroll = false;
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.classList.remove('bg-[#2c7c62]', 'text-white');
+          btn.classList.add('bg-[#e7edf4]', 'text-[#0d141c]');
+        });
+
+        const active = document.querySelector(`.filter-btn[onclick*="${category}"]`);
+        if (active) {
+          active.classList.add('bg-[#2c7c62]', 'text-white');
+          active.classList.remove('bg-[#e7edf4]', 'text-[#0d141c]');
+        }
+
+        renderPage(currentPage);
+      }
+
+      function scrollToTopOfFreelancers() {
+        const target = document.getElementById('especialistas');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        renderPage(currentPage);
+        skipScroll = true;
+      });
+    </script>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+  </body>
+</html>
