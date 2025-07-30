@@ -58,14 +58,14 @@
             <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Ayuda Ecuador</h2>
           </div>
 
-          <!-- Бургер (мобилка) -->
+          <!--Menu mobile-->
           <button id="menu-toggle" class="sm:hidden text-[#0d141c] focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
           </button>
 
-          <!-- Меню -->
+          <!-- Menu -->
           <nav id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-t border-[#e7edf4] sm:static sm:flex sm:items-center sm:gap-9 sm:border-none sm:bg-transparent sm:w-auto">
             <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#about">Nosotros</a>
             <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#especialistas">Especialistas</a>
@@ -113,6 +113,8 @@
               <button onclick="filterFreelancers('all')" class="filter-btn bg-[#2c7c62] text-white px-4 py-1 rounded-full">Todos</button>
               <button onclick="filterFreelancers('websites')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Web</button>
               <button onclick="filterFreelancers('design')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Diseño</button>
+              <button onclick="filterFreelancers('apps')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">App</button>
+              <button onclick="filterFreelancers('data')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Data</button>
             </div>
 
             <div id="freelancer-list" class="flex flex-col gap-4 sm:gap-4">
@@ -222,7 +224,7 @@
 
                 <div class="flex flex-col justify-center text-left sm:flex-1">
                   <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
-                    Marina Panina
+                    Jose Ortiz
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
                     🐍 Desarrollador Python con más de 4 años de experiencia en backend, automatización y análisis de datos. Experto en Django, Flask y 
@@ -261,7 +263,7 @@
 
                 <div class="flex flex-col justify-center text-left sm:flex-1">
                   <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
-                    Marina Panina
+                    Alex Sakharov
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
                     Creativo diseñador web con 6 años de experiencia en UX/UI y diseño responsivo. Manejo Figma, Sketch y Adobe Creative Suite. 
@@ -286,7 +288,7 @@
               </div>
 
               <!--5th position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="data">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
@@ -300,7 +302,7 @@
 
                 <div class="flex flex-col justify-center text-left sm:flex-1">
                   <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
-                    Marina Panina
+                    Antonio Banderas
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
                     📊 Analista de datos con 5 años ayudando a empresas a tomar decisiones basadas en datos. Experto en Python, SQL, 
@@ -325,7 +327,7 @@
               </div>
 
               <!--6th position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="design">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="apps">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
@@ -339,7 +341,7 @@
 
                 <div class="flex flex-col justify-center text-left sm:flex-1">
                   <h2 class="text-[#0d141c] tracking-light text-[20px] sm:text-[24px] font-bold leading-tight mt-4 sm:mt-0 mb-2">
-                    Marina Panina
+                    Bill Gates
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
                     Soy Bill Gates, pionero en tecnología y filántropo apasionado. Con décadas de experiencia en software y liderazgo, 
@@ -364,7 +366,7 @@
               </div>
 
               <!--7th position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="apps">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
@@ -726,12 +728,22 @@
       });
     </script>
 
+    <!--Menu logic-->
     <script>
       const toggle = document.getElementById("menu-toggle");
       const menu = document.getElementById("mobile-menu");
 
-      toggle.addEventListener("click", () => {
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
         menu.classList.toggle("hidden");
+      });
+      document.addEventListener("click", (e) => {
+        const isClickInsideMenu = menu.contains(e.target);
+        const isClickOnToggle = toggle.contains(e.target);
+
+        if (!isClickInsideMenu && !isClickOnToggle && !menu.classList.contains("hidden")) {
+          menu.classList.add("hidden");
+        }
       });
     </script>
 
