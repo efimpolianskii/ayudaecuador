@@ -98,10 +98,20 @@
               <h1 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="about">Sobre Nosotros</h1>
             </div>
             <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              Somos una comunidad de freelancers en el ámbito de TI, de áreas completamente distintas y con experiencias muy diversas. Creamos un 
-              espacio donde cualquier persona interesada, cualquier cliente, puede venir y encontrar fácilmente a un profesional con una visión del 
-              mundo, ideas y enfoques similares, y juntos llevar a cabo cualquier tarea. Nuestro sitio existe precisamente para eso: conectar al 
-              profesional con el cliente. Justo como en una cita.
+              Somos una comunidad de freelancers en el ámbito de TI, que abarca especialidades variadas como desarrollo de software, diseño y 
+              desarrollo web, análisis de datos, marketing digital, traducción profesional y asistencia de negocios. Contamos con profesionales 
+              en ingeniería en software, desarrollo de aplicaciones móviles, diseño gráfico y gestión de proyectos digitales.
+            </p>
+
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Creamos un espacio donde cualquier persona interesada, cualquier cliente, puede venir y encontrar fácilmente a un profesional con 
+              una visión del mundo, ideas y enfoques similares, y juntos llevar a cabo cualquier tarea, ya sea la creación de sitios web modernos, 
+              desarrollo de landing pages, análisis de seguridad de datos, elaboración de planes de marketing, traducción entre idiomas o manejo 
+              de plataformas como Facebook Business y Meta Business Suite.
+            </p>
+
+            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Nuestro sitio existe precisamente para eso: conectar al profesional con el cliente. Justo como en una cita.
             </p>
 
             <div class="flex flex-wrap justify-between gap-3 p-4">
@@ -111,22 +121,25 @@
             <!--Filter buttons-->
             <div class="flex flex-wrap justify-center gap-3 py-4">
               <button onclick="filterFreelancers('all')" class="filter-btn bg-[#2c7c62] text-white px-4 py-1 rounded-full">Todos</button>
-              <button onclick="filterFreelancers('websites')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Web</button>
               <button onclick="filterFreelancers('design')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Diseño</button>
-              <button onclick="filterFreelancers('apps')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">App</button>
-              <button onclick="filterFreelancers('data')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Data</button>
+              <button onclick="filterFreelancers('desarrollo')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Desarrollo</button>
+              <button onclick="filterFreelancers('datos')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Datos</button>
+              <button onclick="filterFreelancers('traduccion')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Traducción</button>
+              <button onclick="filterFreelancers('marketing')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Marketing</button>
+              <button onclick="filterFreelancers('negocio')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Negocio</button>
+              <button onclick="filterFreelancers('trabajo')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Trabajo</button>
             </div>
 
             <div id="freelancer-list" class="flex flex-col gap-4 sm:gap-4">
 
               <!-- 1st position -->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="datos">
                 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
                     <img 
                       src="images/efim-polianskii.jpg" 
-                      alt="efim polisnakii - traductor" 
+                      alt="efim polisnakii - datos" 
                       class="rounded-xl w-full h-full object-cover"
                     />
                   </div>
@@ -137,13 +150,15 @@
                     Efim Polianskii
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
-                    🎨 Desarrollador Frontend con más de 4 años de experiencia creando interfaces modernas y responsivas. Trabajo con React, Vue, Tailwind y otras tecnologías actuales. Me especializo en ofrecer soluciones rápidas, escalables y con buen rendimiento. Disponible para proyectos freelance, remotos o colaboraciones a corto y largo plazo.
+                    📊 Analista especializado en data security y análisis con herramientas como SQL, MySQL y SQL Server. Experiencia con 
+                    modelos de negocio digitales, seguridad de datos (security data) y plataformas como Datafast y Databet. Ideal para 
+                    proyectos que requieren precisión, estrategia y conocimientos en inteligencia de negocios.
                   </p>
                 </div>
 
                 <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
                   <div class="flex flex-row sm:flex-col gap-3">
-                    <!-- Кнопка LinkedIn -->
+                    <!-- Button LinkedIn -->
                     <a href="https://www.linkedin.com/in/efimpolianskii/">
                       <button
                         class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
@@ -155,19 +170,20 @@
                       </button>
                     </a>
 
-                    <!-- Кнопка GitHub -->
-                    <a href="https://example.com">
+                    <!-- Button Telegram -->
+                    <a href="https://t.me/efimp0lianskii">
                       <button
                         class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
                       >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 0C5.371 0 0 5.373 0 12c0 4.991 3.053 9.243 7.422 11.004-.102-.937-.195-2.38.041-3.404.215-.95 1.387-6.043 1.387-6.043s-.353-.707-.353-1.752c0-1.64.951-2.866 2.136-2.866 1.005 0 1.49.754 1.49 1.657 0 1.009-.642 2.518-.974 3.924-.278 1.175.59 2.135 1.747 2.135 2.096 0 3.706-2.211 3.706-5.404 0-2.821-2.027-4.796-4.913-4.796-3.346 0-5.307 2.507-5.307 5.1 0 1.011.389 2.096.875 2.685a.354.354 0 0 1 .082.34c-.09.376-.295 1.175-.336 1.338-.053.214-.174.26-.403.157-1.504-.7-2.44-2.896-2.44-4.662 0-3.792 2.755-7.276 7.938-7.276 4.165 0 7.398 2.969 7.398 6.937 0 4.138-2.609 7.475-6.229 7.475-1.217 0-2.361-.631-2.751-1.379l-.749 2.853c-.271 1.031-1.007 2.324-1.501 3.109C10.359 23.857 11.17 24 12 24c6.629 0 12-5.373 12-12S18.629 0 12 0z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                          <path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/>
                         </svg>
-                        <span>GitHub</span>
+                        <span>Telegram</span>
                       </button>
                     </a>
                   </div>
                 </div>
+
                 <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
               </div>
 
@@ -179,7 +195,7 @@
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
                     <img 
                       src="images/marina-panina.jpg" 
-                      alt="efim polisnakii - traductor" 
+                      alt="marina panina - design" 
                       class="rounded-xl w-full h-full object-cover"
                     />
                   </div>
@@ -190,33 +206,51 @@
                     Marina Panina
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
-                    🎨 Desarrollador Frontend con más de 4 años de experiencia creando interfaces modernas y responsivas. Trabajo con React, Vue, Tailwind y otras tecnologías actuales. Me especializo en ofrecer soluciones rápidas, escalables y con buen rendimiento. Disponible para proyectos freelance, remotos o colaboraciones a corto y largo plazo.
+                    🎨 Diseñador gráfico especializado en diseño web y desarrollo de sitios web modernos y funcionales. 
+                    Experiencia en diseño gráfico, diseño y desarrollo web, landing pages y aplicaciones móviles. Trabajo con herramientas 
+                    como WPress Digital y tengo enfoque en negocios digitales y modelo de negocio orientado al cliente.
                   </p>
                 </div>
 
                 <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
-                  <a href="https://www.linkedin.com/in/efimpolianskii/">
-                    <button
-                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
-                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
-                      </svg>
-                      <span>LinkedIn</span>
-                    </button>
-                  </a>
+                  <div class="flex flex-row sm:flex-col gap-3">
+                    <!-- Button LinkedIn -->
+                    <a href="https://www.linkedin.com/in/marina-panina-16424a287/">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                          <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </button>
+                    </a>
+
+                    <!-- Button Telegram -->
+                    <a href="https://t.me/paninainteriors">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                          <path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/>
+                        </svg>
+                        <span>Telegram</span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
+
                 <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
               </div>
 
               <!--3rd position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="websites">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="desarrollo">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
                     <img 
                       src="images/efim-polianskii-1.jpg" 
-                      alt="efim polisnakii - traductor" 
+                      alt="efim polisnakii - desarrollo" 
                       class="rounded-xl w-full h-full object-cover"
                     />
                   </div>
@@ -227,29 +261,45 @@
                     Jose Ortiz
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
-                    🐍 Desarrollador Python con más de 4 años de experiencia en backend, automatización y análisis de datos. Experto en Django, Flask y 
-                        creación de APIs eficientes. Me enfoco en código limpio, rendimiento y soluciones a medida 🚀. Siempre listo para nuevos retos y 
-                        proyectos innovadores.
+                    🚀 Soy especialista en desarrollo de software con formación en ingeniería en software. Me dedico al diseño y desarrollo 
+                    web, creando sitios web funcionales, landing pages efectivas y aplicación móvil según las necesidades del cliente. 
+                    Experiencia en software de sistema y software de aplicación, enfocado en soluciones prácticas y escalables.
                   </p>
                 </div>
 
                 <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
-                  <a href="https://www.linkedin.com/in/efimpolianskii/">
-                    <button
-                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
-                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
-                      </svg>
-                      <span>LinkedIn</span>
-                    </button>
-                  </a>
+                  <div class="flex flex-row sm:flex-col gap-3">
+                    <!-- Button LinkedIn -->
+                    <a href="https://www.linkedin.com/in/efimpolianskii/">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                          <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </button>
+                    </a>
+
+                    <!-- Button Telegram -->
+                    <a href="https://t.me/pol1_y">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                          <path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/>
+                        </svg>
+                        <span>Telegram</span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
+
                 <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
               </div>
 
               <!--4th position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="design">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="traduccion">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
@@ -266,35 +316,51 @@
                     Alex Sakharov
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
-                    Creativo diseñador web con 6 años de experiencia en UX/UI y diseño responsivo. Manejo Figma, Sketch y Adobe Creative Suite. 
-                        Transformo ideas en experiencias digitales únicas que aumentan la interacción y retención de usuarios 💡. 
-                        Trabajo con pasión, atención al detalle y compromiso en cada proyecto. ¡Vamos a crear juntos! 🚀
+                    🌍 Soy traductor profesional con experiencia en traducciones precisas entre ruso y español. Utilizo herramientas 
+                    avanzadas como DeepL Traductor para asegurar resultados de alta calidad. Me especializo en adaptar textos con 
+                    sensibilidad cultural, ofreciendo un trabajo fluido, natural y puntual para proyectos personales o empresariales.
                   </p>
                 </div>
 
                 <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
-                  <a href="https://www.linkedin.com/in/efimpolianskii/">
-                    <button
-                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
-                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
-                      </svg>
-                      <span>LinkedIn</span>
-                    </button>
-                  </a>
+                  <div class="flex flex-row sm:flex-col gap-3">
+                    <!-- Button LinkedIn -->
+                    <a href="https://www.linkedin.com/in/efimpolianskii/">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                          <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </button>
+                    </a>
+
+                    <!-- Button Telegram -->
+                    <a href="https://t.me/pol1_y">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                          <path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/>
+                        </svg>
+                        <span>Telegram</span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
+
                 <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
               </div>
 
               <!--5th position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="data">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="trabajo">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
                     <img 
                       src="images/efim-polianskii-3.jpg" 
-                      alt="efim polisnakii - traductor" 
+                      alt="efim polisnakii - trabajo" 
                       class="rounded-xl w-full h-full object-cover"
                     />
                   </div>
@@ -305,29 +371,45 @@
                     Antonio Banderas
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
-                    📊 Analista de datos con 5 años ayudando a empresas a tomar decisiones basadas en datos. Experto en Python, SQL, 
-                      Tableau y Power BI. Me especializo en limpieza, visualización y modelado de datos para maximizar resultados 📈. 
-                      Apasionado por descubrir insights que impulsan el crecimiento. Listo para nuevos desafíos. 🔍
+                    👥 Soy especialista en RRHH con experiencia en selección de talento para trabajos online y trabajos remotos en español. 
+                    He gestionado procesos de contratación para trabajo remoto en Ecuador y otras regiones, adaptándome a las nuevas 
+                    dinámicas laborales. Enfoque en eficiencia, comunicación clara y búsqueda de perfiles ideales para equipos distribuidos.
                   </p>
                 </div>
 
                 <div class="pt-4 sm:pt-0 sm:pl-4 shrink-0 self-start sm:self-center">
-                  <a href="https://www.linkedin.com/in/efimpolianskii/">
-                    <button
-                      class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
-                        <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
-                      </svg>
-                      <span>LinkedIn</span>
-                    </button>
-                  </a>
+                  <div class="flex flex-row sm:flex-col gap-3">
+                    <!-- Button LinkedIn -->
+                    <a href="https://www.linkedin.com/in/efimpolianskii/">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 640 640" fill="currentColor">
+                          <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </button>
+                    </a>
+
+                    <!-- Button Telegram -->
+                    <a href="https://t.me/pol1_y">
+                      <button
+                        class="flex items-center gap-2 h-8 px-4 rounded-full bg-[#e7edf4] text-[#0d141c] text-sm font-medium w-[120px]"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                          <path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/>
+                        </svg>
+                        <span>Telegram</span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
+
                 <div class="border-t border-[#e7edf4] m-0 p-0 sm:mx-0 sm:px-0"></div>
               </div>
 
               <!--6th position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="apps">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="negocio">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
@@ -344,9 +426,9 @@
                     Bill Gates
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
-                    Soy Bill Gates, pionero en tecnología y filántropo apasionado. Con décadas de experiencia en software y liderazgo, 
-                          ofrezco soluciones innovadoras y estratégicas para proyectos tecnológicos complejos 🌍. Experto en desarrollo, 
-                          gestión y visión global. Listo para transformar tu idea en realidad con impacto mundial. 🚀
+                    💼 Soy asistente de negocios con experiencia en gestión digital a través de herramientas como Facebook Business, 
+                    WhatsApp Business y Meta Business Suite. Apoyo en organización de procesos, atención al cliente vía WhatsApp 
+                    Business Web y desarrollo de modelos como el Modelo de Negocio Canvas para impulsar proyectos y negocios digitales.
                   </p>
                 </div>
 
@@ -366,13 +448,13 @@
               </div>
 
               <!--7th position-->
-              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="apps">
+              <div class="flex flex-col sm:flex-row gap-4 bg-slate-50 px-4 py-2 sm:py-6 justify-between rounded-xl freelancer" data-category="marketing">
 
                 <div class="flex justify-center sm:justify-start">
                   <div class="relative bg-[#e7edf4] rounded-xl w-52 h-52 sm:w-48 sm:h-48 flex items-center justify-center overflow-hidden">
                     <img 
                       src="images/luis-von-ahn.jpg" 
-                      alt="efim polisnakii - traductor" 
+                      alt="efim polisnakii - marketing" 
                       class="rounded-xl w-full h-full object-cover"
                     />
                   </div>
@@ -383,9 +465,10 @@
                     Luis von Ahn
                   </h2>
                   <p class="text-[#49719c] text-sm font-normal leading-normal">
-                    🌟 Soy Luis von Ahn, creador de Duolingo y pionero en aprendizaje de idiomas mediante tecnología. Con 
-                          amplia experiencia en desarrollo de software, gamificación y educación digital, diseño soluciones innovadoras 
-                          que transforman la forma de aprender 📚. Apasionado por la tecnología que conecta y educa. Listo para nuevos retos. 🚀
+                    🌟 Soy especialista en marketing digital con enfoque en marketing personal y estrategias de marketing adaptadas 
+                    a cada cliente. Experiencia en plan de marketing, marketing mix y trade marketing. También he trabajado en 
+                    proyectos de network marketing y asesorado en marketing digital carrera para emprendedores y marcas que 
+                    buscan crecer en entornos competitivos.
                   </p>
                 </div>
 
@@ -474,8 +557,10 @@
               <h1 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="geografia">Geografía</h1>
             </div>
             <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              Vivimos y trabajamos en todo el mundo y con todo el mundo, pero la mayoría de nosotros vive justamente aquí. 
-              Cada día trabajamos para ampliar nuestra geografía y nuestro equipo, para que algún día también veas tu ciudad aquí:
+              Vivimos y trabajamos en todo el mundo y con todo el mundo, pero la mayoría de nosotros vive justamente aquí. Cada día trabajamos para ampliar 
+              nuestra geografía y nuestro equipo, incorporando expertos en trabajos online, trabajos remotos en español y desarrollo de software, 
+              así como especialistas en marketing digital, diseño y desarrollo web, y gestión de negocios digitales. Queremos que algún día también 
+              veas tu ciudad aquí, conectada a una red global de talento y oportunidades.
             </p>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
